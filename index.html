@@ -34,7 +34,7 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title" aria-hidden="true">no focus</h1>
+      <h1 class="header__title">no focus</h1>
       <span class="visually-hidden">no focus</span>
       <h2 class="header__description">
         Что делать, когда не можешь делать ничего<br />Или почему нам так сложно
@@ -42,10 +42,10 @@
       </h2>
     </header>
     <main>
-      <article>
-        <section class="columns">
+      <div class="main_content">
+        <section class="causes">
           <h2 class="article__title">Почему сосредоточиться так сложно</h2>
-          <div class="content-block">
+          <article class="content-block">
             <h3 class="paragraph_title">Многозадачность</h3>
             <p class="paragraph">
               Особенно сложно сосредоточиться, когда задач много и все они —
@@ -60,8 +60,8 @@
               «гормоны стресса». Из-за этого мы работаем невнимательно:
               ошибаемся и быстро устаём.
             </p>
-          </div>
-          <div class="content-block">
+          </article>
+          <article class="content-block">
             <h3 class="paragraph_title">Дофамин</h3>
             <p class="paragraph">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
@@ -73,11 +73,11 @@
               чувствуем удовольствие. Получается замкнутый круг: чем больше
               отвлекаешься, тем больше удовольствия получаешь.
             </p>
-          </div>
+          </article>
         </section>
-        <section class="wide">
+        <section class="reducers">
           <h2 class="article__title">Что снижает концентрацию внимания?</h2>
-          <div class="content-block">
+          <article class="content-block">
             <h3 class="paragraph_title">Концентрация</h3>
             <p class="paragraph">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -87,8 +87,8 @@
               собранными всё время — невозможно. Концентрация — мышца, и она
               может не выдержать, если не давать ей отдохнуть.
             </p>
-          </div>
-          <div class="content-block">
+          </article>
+          <article class="content-block">
             <h3 class="paragraph_title">Еда</h3>
             <p class="paragraph">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -98,8 +98,8 @@
               углеводов» заканчивается, мы чувствуем усталость и сонливость. И
               хотим ещё больше быстрых углеводов.
             </p>
-          </div>
-          <div class="content-block">
+          </article>
+          <article class="content-block">
             <h3 class="paragraph_title">Гаджеты</h3>
             <p class="paragraph">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -110,9 +110,9 @@
               Вот и получается, что чем больше времени мы проводим в гаджетах,
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
-          </div>
+          </article>
         </section>
-        <section class="columns">
+        <section class="tips">
           <h2 class="article__title">
             Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
             секунд)
@@ -121,8 +121,8 @@
             <h3 class="paragraph_title">
               5 простых (на самом деле не очень) советов
             </h3>
-            <div class="content-block">
-              <h3 class="paragraph_title_thin">Представьте небо и облака</h3>
+            <article class="content-block">
+              <h4 class="paragraph_title paragraph_title_thin">Представьте небо и облака</h4>
               <p class="paragraph">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая
                 помогает успокоиться. Ведь часто именно тревожные мысли о
@@ -133,19 +133,19 @@
                 денется. Это упражнение поможет вернуться в настоящий момент, а
                 не волноваться о потенциальных проблемах из будущего.
               </p>
-            </div>
+            </article>
           </div>
-          <div class="content-block">
-            <h3 class="paragraph_title_thin">Включите музыку</h3>
+          <article class="content-block">
+            <h4 class="paragraph_title paragraph_title_thin">Включите музыку</h4>
             <p class="paragraph">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
               Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
               попробовать включить плейлист c «белым шумом» или нейромузыкой.
             </p>
-          </div>
-          <div class="content-block">
-            <h3 class="paragraph_title_thin">Прогуляйтесь</h3>
+          </article>
+          <article class="content-block">
+            <h4 class="paragraph_title paragraph_title_thin">Прогуляйтесь</h4>
             <p class="paragraph">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a
@@ -158,27 +158,27 @@
               мозг поступит ещё больше кислорода и он будет лучше работать. Но и
               простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
-          </div>
-          <div class="content-block">
-            <h3 class="paragraph_title_thin">Хорошо ешьте</h3>
+          </article>
+          <article class="content-block">
+            <h4 class="paragraph_title paragraph_title_thin">Хорошо ешьте</h4>
             <p class="paragraph">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
               высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
               чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
             </p>
-          </div>
-          <div class="content-block">
-            <h3 class="paragraph_title_thin">Читайте</h3>
+          </article>
+          <article class="content-block">
+            <h4 class="paragraph_title paragraph_title_thin">Читайте</h4>
             <p class="paragraph">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
               даже секунд. А вот интересная книга способна затянуть и на
               несколько часов и круто тренирует направленное внимание.
             </p>
-          </div>
+          </article>
         </section>
-      </article>
+      </div>
       <section class="gallery">
         <h2 class="paragraph_title">А можно в картинках?</h2>
         <ul class="gallery__list">
