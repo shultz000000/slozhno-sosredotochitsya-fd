@@ -1,0 +1,15 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-dark {
+  --bg-image: url('../images/cover-image-dark.png');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    --bg-image: url('../images/cover-image-dark.png');
+  }
+}

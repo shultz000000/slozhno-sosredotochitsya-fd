@@ -1,0 +1,38 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+:root.theme-light {
+  --bg-image: url('../images/cover-image-light.png');
+  --title-color: #FFC2E6;
+  --description-color: #353430;
+  --description-bg: #FF8DCB;
+  --accent-color: #FF8DCB;
+  --hover-color: #32312D66;
+  --text-color: #353430;
+  --title-accent-color: #353430;
+  --bg-color: #FFC2E6;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --bg-image: url('../images/cover-image-light.png');
+    --title-color: #FFC2E6;
+    --description-color: #353430;
+    --description-bg: #FF8DCB;
+    --accent-color: #FF8DCB;
+    --hover-color: #32312D66;
+    
+  }
+}
+
+:root.theme-light .header__rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .header__rec {
+    display: none;
+  }
+}
